@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+    <body>
+    <div class="container mt-4">
+      <form id="bitcoin">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h1>Converter</h1>
+          </div>
+         <div class="form-group mt-4 ml-2">
+            <label class="radio-inline"> <input type="radio" id="bit" name="money"> Converter para Bitcoin </label>
+            <label class="radio-inline"><input type="radio" id="real" name="money"> Converter para Real </label></div>
+        </div>
+          <div class="col-6">
+            <label>Valor</label>
+            <input type="text" name="" value="" id="value"  data-thousands="." data-decimal="," data-prefix="R$ " class="form-control">
+          </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+            <button type="submit" id="enviar" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </form>
+      <div class="jumbotron mt-4">
+          <h1 class="display-6">Resultado</h1>
+          <p id="result"></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
